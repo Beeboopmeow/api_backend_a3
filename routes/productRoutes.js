@@ -10,7 +10,7 @@ router.get("/products", (req, res, next) =>
   productController.getAll(req, res, next)
 );
 router.get("/products/:id", (req, res, next) =>
-  productController.getById(req, res, next)
+  productController.getOneById(req, res, next)
 );
 router.put("/products/:id", (req, res, next) =>
   productController.update(req, res, next)

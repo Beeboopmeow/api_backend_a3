@@ -10,7 +10,7 @@ router.get("/orders", (req, res, next) =>
   orderController.getAll(req, res, next)
 );
 router.get("/orders/:id", (req, res, next) =>
-  orderController.getById(req, res, next)
+  orderController.getOneById(req, res, next)
 );
 router.put("/orders/:id", (req, res, next) =>
   orderController.update(req, res, next)
