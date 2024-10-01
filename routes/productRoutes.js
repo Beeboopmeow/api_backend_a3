@@ -16,7 +16,7 @@ router.put("/products/:id", (req, res, next) =>
   productController.update(req, res, next)
 );
 router.delete("/products/:id", (req, res, next) =>
-  productController.delete(req, res, next)
+  productController.erase(req, res, next)
 );
 
 module.exports = router;
