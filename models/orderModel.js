@@ -4,14 +4,6 @@ const sequelize = require("../config/dbConnect.js");
 const Order = sequelize.define(
   "Order",
   {
-    customerName: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    customerContact: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     address: {
       type: DataTypes.STRING,
       allowNull: false,

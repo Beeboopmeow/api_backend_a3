@@ -1,6 +1,6 @@
 const Order = require("../models/orderModel");
-const controller = require("./controller");
+const Controller = require("./Controller");
 
-const orderController = controller(Order);
+const orderController = new Controller(Order);
 
 module.exports = orderController;

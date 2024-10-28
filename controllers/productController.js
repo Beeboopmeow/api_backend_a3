@@ -1,6 +1,6 @@
 const Product = require("../models/productModel");
-const controller = require("./controller");
+const Controller = require("./Controller");
 
-const productController = controller(Product);
+const productController = new Controller(Product);
 
 module.exports = productController;
