@@ -19,4 +19,8 @@ router.delete("/customers/:id", (req, res, next) =>
   customerController.erase(req, res, next)
 );
 
+router.post("/customer/login", (req, res, next) =>
+  customerController.login(req, res, next)
+);
+
 module.exports = router;

@@ -33,7 +33,7 @@ const Customer = sequelize.define(
               delete customer.password;
             }
           });
-        } else if (customers && customer.password) {
+        } else if (customers && customers.password) {
           delete customers.password;
         }
       },
