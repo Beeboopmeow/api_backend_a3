@@ -21,8 +21,8 @@ app.get("/", (req, res) => {
 require("./models/associations.js");
 
 try {
-  sequelize.sync({ force: true }).then(() => {
-    console.log("Database and tables created!");
+  sequelize.sync({ alter: true }).then(() => {
+    console.log("Database and tables updated!");
     app.listen(port, async () => {
       console.log(`app listening at http://localhost:${port}`);
     });

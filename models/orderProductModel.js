@@ -4,7 +4,7 @@ const sequelize = require("../config/dbConnect");
 const OrderProduct = sequelize.define(
   "OrderProduct",
   {
-    quantity: {
+    amount: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
