@@ -4,7 +4,8 @@ Repository for a project from my bachelor's degree in Computer Science, it consi
 ## Running
 1. This project uses the PostgreSQL dialect with Sequelize, PostgreSQL installation available [here](https://www.postgresql.org/download/). (pgAdmin not needed if you have another database manager, such as [DBeaver](https://dbeaver.io/))
 2. Clone the repository using **Git**.
-3. Run the command *npm start* and the webserver should be open.
+3. Update the `dbConnect.js` file to match your database information.
+4. Run the command *npm start* and the webserver should be open.
 
 ## More information
 **Entity Relationship Diagram** for this project's database
