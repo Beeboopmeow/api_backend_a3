@@ -1,3 +1,5 @@
+const { where } = require("sequelize");
+
 class Controller {
   constructor(Model) {
     this.Model = Model;
